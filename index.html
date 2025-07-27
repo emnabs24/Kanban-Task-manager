@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task List</h1>
+    </div>
+    <div class="container columns">
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">To Do</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks">
+            <!-- <div class="task" draggable="true">
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <menu>
+                <button data-edit=""><i class="bi bi-pencil-square"></i></button>
+                <button data-delete><i class="bi bi-trash"></i></button>
+              </menu>
+            </div> -->
+            <!-- <div class="task dragging" draggable="true">
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <menu>
+                <button data-edit=""><i class="bi bi-pencil-square"></i></button>
+                <button data-delete><i class="bi bi-trash"></i></button>
+              </menu>
+            </div> -->
+            <!-- <div class="task" draggable="true">
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <menu>
+                <button data-edit=""><i class="bi bi-pencil-square"></i></button>
+                <button data-delete><i class="bi bi-trash"></i></button>
+              </menu>
+            </div> -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">In Progress</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks">
+                      <!-- <div class="task" draggable="true">
+              <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <menu>
+                <button data-edit=""><i class="bi bi-pencil-square"></i></button>
+                <button data-delete><i class="bi bi-trash"></i></button>
+              </menu>
+            </div>
+            <div class="task-input" contenteditable="true" data-placeholder="Task name"></div> -->
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Done</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+    </div>
+    </div>
+    <dialog class="confirm-modal">
+      <form  method="dialog">
+        <h3>Delete Task</h3>
+        <p>You are about to delete the ff. tasks</p>
+        <div class="preview"></div>
+        <menu>
+          <button type="button" id="cancel">Cancel</button>
+          <button type="button" id="confirm">Yes, delete it.</button>
+        </menu>
+      </form>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
